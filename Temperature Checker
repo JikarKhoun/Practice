@@ -1,0 +1,22 @@
+#include <stdio.h>
+int main (void)
+{
+
+float temperature;
+
+printf("***Temperature Checker***\n");
+
+printf("\nWhat is the temperature? ");
+scanf(" %f", &temperature);
+
+if (temperature > 30) {
+    printf("According to the temperature given (%.1f). The weather is hot.\n", temperature);
+}
+else if (temperature < 10) {
+    printf("According to the temperature given (%.1f). The weather is cold.\n", temperature);
+}
+else {
+    printf("According to the temperature given (%.1f). The weather is normal.\n", temperature);
+}
+return 0;
+}
