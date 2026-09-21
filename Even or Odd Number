@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main () {
+
+printf("Even or Odd Number\n");
+
+int number1;
+
+printf("\nGive the first number: ");
+
+if (scanf("%d", &number1) != 1) {
+    printf("This is not a number.\n");
+}
+    
+else 
+{
+
+    if (number1 % 2 == 0) {
+        printf("The number is even.\n");
+    } 
+    else {
+        printf("The number is odd.\n");
+    }
+}
+
+}
