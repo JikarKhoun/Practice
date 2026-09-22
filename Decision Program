@@ -1,0 +1,84 @@
+#include <stdio.h>
+int main()
+{
+
+    printf("***Decision Program***\n\n");
+
+
+    int age, score;
+    char ifstudent;
+
+    printf("Enter age: ");
+    scanf(" %d", &age);
+    printf("Enter score exam: ");
+    scanf(" %d", &score);
+    printf("Are you a student? Choose y for yes or n for no: ");
+    scanf(" %c", &ifstudent);
+
+//conditions for age
+printf("\n");
+
+{
+
+if (age < 13) 
+{
+    printf("Child\n");
+}
+    else if (age >= 13 && age <= 19 ) 
+{
+    printf("Teenager\n");
+}
+    else if (age >= 20 && age <= 64) 
+{
+    printf("Adult\n");
+}
+    else if ( age >= 65) 
+{
+    printf("Senior\n");
+}
+
+}
+
+//Score Evaluation
+{
+
+   if ( score >= 90 ) 
+{
+    printf("Excellent\n");
+}
+    else if (score >= 75 ) 
+{
+    printf("Good\n");
+}
+    else if ( score >= 50 ) 
+{
+    printf("Pass\n");
+}
+    else if ( score < 50 ) 
+{
+    printf("Fail\n");
+}
+
+}
+
+//Student Discount
+
+{
+    if (ifstudent == 'y' && age < 25)
+{ 
+    printf("You get a student discount.");
+}
+
+
+    else 
+{
+    printf("No discount");
+}
+
+
+}
+ 
+ return 0;
+
+
+}
